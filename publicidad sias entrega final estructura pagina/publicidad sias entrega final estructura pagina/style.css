@@ -41,12 +41,12 @@ html {
 }
 
 li {
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 #icon-logo {
-    width: 50px;
+    width: 40px;
     height: auto;
     margin-left: 20px;
 }
@@ -70,7 +70,7 @@ li {
     width: 0;
     height: 2px;
     background-color: rgb(255, 255, 255) !important;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.2s ease-in-out;
 }
 
 .nav-link:hover::after {
@@ -79,12 +79,12 @@ li {
 
 
 #hero {
-    height: 100vh;
+    height: 80vh;
 }
 
 
 #hero-title {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 700;
 }
 
@@ -94,7 +94,7 @@ li {
 
 .right-side,
 .left-side {
-    height: 100vh;
+    height: 80vh;
 }
 
 /*Columna izquierda del hero*/
@@ -105,7 +105,7 @@ li {
 }
 
 .left-side-proyect {
-    background-image: url('assets/111.JPEG');
+    background-image: url('assets/img/personas.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -123,29 +123,32 @@ li {
 }
 
 #marcas {
-    background-color: #1d93cc;
+    background-color: hsl(200, 75%, 46%);
+
 }
 
 #marcas h2 {
     color: aliceblue;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .carousel-logos {
     position: relative;
     overflow: hidden;
     width: 100%;
+    background-color: hsl(200, 75%, 46%);
 }
 
 .logos-track {
     display: flex;
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
     justify-content: space-between;
 }
 
 .logo-item {
     flex: 0 0 auto;
-    padding: 10px;
+    padding: 5px;
+    margin: 30px;
 }
 
 .about-title {
@@ -226,6 +229,7 @@ li {
 }
 
 #card-caracteristic {
+    width: 25rem;
     border: none;
     border-radius: 20px;
     font-size: 20px;
@@ -287,7 +291,9 @@ li {
     font-weight: 400;
 }
 
-
+.img-1{
+    border-radius: 20px;
+}
 
 #link-project {
     width: 100%;
@@ -311,7 +317,7 @@ li {
 
 #contact h2 {
     color: rgb(26, 26, 26);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #form-control {
@@ -462,7 +468,7 @@ footer p {
 }
 
 #proyects {
-    background: linear-gradient(to bottom, #FFFFFF 5%, #6cbbe3 20%, #1D93CC 100%)
+    background: linear-gradient(to bottom, #FFFFFF 5%, #6cbbe3 20%, #1D93CC 100%);
 }
 
 .serv {
@@ -472,26 +478,46 @@ footer p {
 
 .serv h1 {
     color: #1d92cc;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 
 /*Scroll automatico de logos*/
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(10%);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-160%);
     }
 }
 
+@media (max-width: 375px) {
+    #card-caracteristic {
+        width: 20rem;
+        border: none;
+        border-radius: 20px;
+        font-size: 10px;
+        box-shadow: 0 26px 30px -20px rgba(0, 0, 0, .15);
+        transition: all 0.3s ease;
+    }
+}
 
+@media (max-width: 414px) {
+    #card-caracteristic {
+        width: 20rem;
+        border: none;
+        border-radius: 30px;
+        font-size: 10px;
+        box-shadow: 0 26px 30px -20px rgba(0, 0, 0, .15);
+        transition: all 0.1s ease;
+    }
+}
 
 @media (max-width: 576px) {
     #hero-title {
-        font-size: 50px !important;
+        font-size: 10px !important;
         /* Tamaño de letra para pantallas pequeñas */
     }
 
@@ -510,6 +536,15 @@ footer p {
         font-size: 18px;
         font-weight: 400;
     }
+
+
+
+
+   
+    
+   
+
+
 
     .link-about {
         padding: 16px 8px;
@@ -532,7 +567,7 @@ footer p {
 
     form.contact {
         margin: 0 auto; 
-        padding: 0 1rem; 
+        padding: 0 1rem;
     }
 
     .form-floating .form-control {
@@ -557,9 +592,29 @@ footer p {
 
 @media (max-width: 820px) {
     #hero-title {
-        font-size: 40px!important;
+        font-size: 30px !important;
     }
 
+    .right-side {
+    height: 50vh;
+    }
+
+    #hero {
+        height: 50vh;
+    }
+    
+    #proyectos-direct {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+    
+    #proyectos-direct h1 {
+        font-size: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     .logos-track {
         display: flex;
         animation: scroll 10s linear infinite;
@@ -568,6 +623,16 @@ footer p {
 
     #hero-article {
         padding-top: 130px;
+    }
+
+    .hero-title{
+        font-size: 20px;
+    }
+
+    .img-1{
+        justify-content: center;
+        width: 80%;
+        border-radius: 20px;
     }
 
     .about-title {
@@ -592,7 +657,7 @@ footer p {
     }
 
     #icon-logo {
-        width: 55px;
+        width: 30px;
         height: auto;
     }
 
@@ -612,6 +677,10 @@ footer p {
         font-size: 1.1rem;
         padding: 0.75rem;
         height: calc(3rem + 2px);
+    }
+
+    .img-post{
+        margin: 100%;
     }
 }
 
@@ -753,7 +822,7 @@ footer p {
 
 .contact {
     align-items: center;
-    margin: 150px;
+    margin: 50px;
 }
 
 
